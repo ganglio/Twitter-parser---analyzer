@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cat pippo | gawk '{print $1" "$2" "strftime("%H",$3);}' > data.csv
+cat data2.csv data.csv > parsed.csv
+./analyze.r
+gnuplot plot
+wc parsed.csv
