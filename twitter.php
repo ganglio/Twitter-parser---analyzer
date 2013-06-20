@@ -16,7 +16,7 @@ class MyStream extends Phirehose {
 	}
 }
 
-$stream = new MyStream('ganglio', 'cammello', Phirehose::METHOD_FILTER);
+$stream = new MyStream('<username>', '<password>', Phirehose::METHOD_FILTER);
 $stream->setLocationsByCircle(array(
 	//array(14.2, 40.966667, 25),   // Aversa 10km radius
 	array(-0.1262, 51.5176, 12),   // London 10km radius
